@@ -1,11 +1,16 @@
 import React from 'react'
 import './Colors.css'
-function Colors() {
+import Input from '../../components/Input'
+
+function Category() {
   return (
-    <div>
-      Colors
-    </div>
+    <section>
+      <h2 className="color-title title">Colors</h2>
+      <div className='sidebar-items'>
+        <Input category={'All'}/>
+        </div>
+    </section>
   )
 }
 
-export default Colors
+export default Category
