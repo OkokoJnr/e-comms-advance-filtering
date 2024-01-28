@@ -12,7 +12,6 @@ function App() {
 
   const [selectedCategory, setSelectedCategory] = useState('')
   const [query, setQuery] = useState('')
-  const [recommendationBtn, setRecommendationBtn] = useState('')
 
   const handleInputChange = event =>{
     setQuery(event.target.value)
@@ -39,7 +38,8 @@ function App() {
       filteredProducts = filteredItems
     }
     if(selected){
-      let filteredProducts = filteredItems.filter(({color, price, category, company, title})=> color === selected || price === selected || category === selected || company === selected || title===selected)
+      console.log('selected')
+      filteredProducts = filteredItems.filter(({color, price, category, company, title})=> color === selected || price === selected || category === selected || company === selected || title===selected)
     }
 return filteredProducts
 
@@ -49,7 +49,7 @@ return filteredProducts
   
   return (
     <>
-    <SideBar/>
+    <SideBar onChangeCategory={handleChangeCategory} />
     <Navigation handleInputChange={handleInputChange}/>
     <Recommended onClickHandler={handleRecommendationBtn}/>
     <Products result={result} />    

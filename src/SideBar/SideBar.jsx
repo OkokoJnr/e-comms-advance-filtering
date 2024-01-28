@@ -5,13 +5,14 @@ import Colors from './Colors/Colors'
 import Category from './Category/Category'
 import './SideBar.css' 
 
-function SideBar() {
+function SideBar({onChangeCategory}) {
+  
   return (
     <section className='sidebar'>
       <div className="logo-container">
         <h1>🛒</h1>
       </div>
-      <Category/>
+      <Category onChangeCategory={onChangeCategory}/>
       <Colors/>
       <Price/>
     </section>
