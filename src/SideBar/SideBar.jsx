@@ -13,8 +13,8 @@ function SideBar({onChangeCategory}) {
         <h1>🛒</h1>
       </div>
       <Category onChangeCategory={onChangeCategory}/>
+      <Price onChangeCategory={onChangeCategory}/>
       <Colors onChangeCategory={onChangeCategory}/>
-      <Price/>
     </section>
   )
 }

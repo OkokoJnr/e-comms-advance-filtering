@@ -38,8 +38,8 @@ function App() {
       filteredProducts = filteredItems
     }
     if(selected){
-      console.log('selected')
-      filteredProducts = filteredItems.filter(({color, price, category, company, title})=> color === selected || price === selected || category === selected || company === selected || title===selected)
+      filteredProducts = filteredItems.filter(({color, newPrice, category, company, title})=> color === selected || newPrice === selected || category === selected || company === selected || title===selected
+      )
     }
 return filteredProducts
 
