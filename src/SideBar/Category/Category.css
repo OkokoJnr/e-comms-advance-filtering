@@ -57,6 +57,15 @@
     background-color: white;
 } 
 
+.sidebar-label-container .black-checkmark.checkmark::after{
+       top: 6.5px;
+    left: 6.5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+}
+
 .line{
     margin-top: 3rem;
     border-color: #f7f7f7;

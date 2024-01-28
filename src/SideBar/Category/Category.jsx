@@ -3,7 +3,6 @@ import './Category.css'
 import Input from '../../components/Input'
 
 function Category({onChangeCategory}) {
-  console.log('oc')
   return (
     <section>
       <h2 className="category-title title">Category</h2>
