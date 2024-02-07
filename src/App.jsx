@@ -59,7 +59,7 @@ function App() {
     <SideBar onChangeCategory={handleChangeCategory} />
     <Navigation handleInputChange={handleInputChange}/>
     <Recommended onClickHandler={handleRecommendationBtn}/>
-    <Products result={result} />    
+    <Products result={result} selectedCategory={selectedCategory} query = {query}/>    
     </>
   )
 }
